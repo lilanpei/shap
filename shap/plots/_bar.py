@@ -315,6 +315,8 @@ def bar(shap_values, max_display=10, order=Explanation.abs, clustering=None, clu
     
     if show:
         pl.show()
+    else:
+        return pl.gcf()
 
 
 
@@ -401,3 +403,5 @@ def bar_legacy(shap_values, features=None, feature_names=None, max_display=None,
     
     if show:
         pl.show()
+    else:
+        return pl.gcf()
